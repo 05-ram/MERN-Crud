@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    body {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #ffffff;
+        font-size: 16px;
+    }
+}
+
+.container {
+    max-width: 1200px !important;
+}
+
+/* input styles */
+.form-grp {
+    width: 450px;
+
+    .form-control {
+        height: 54px;
+    }
+}
+
+.btn {
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+.btn-outline-light {
+    background-color: unset !important;
+}
