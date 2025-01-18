@@ -16,7 +16,7 @@ const RouterData = () => {
             element: <CreateUser />,
         },
         {
-            path: '/update',
+            path: '/update/:id',
             element: <UpdateUser />,
         }
     ])

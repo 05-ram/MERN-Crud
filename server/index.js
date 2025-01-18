@@ -5,13 +5,15 @@ const cors = require('cors');
 const connectDb = require('./config/connectDb');
 
 const app = express();
+
+const port = process.env.PORT || 5003;
+connectDb();
+
 app.use(cors());
 app.use(express.json())
-connectDb();
-const port = process.env.PORT || 5003;
+
+app.use('/', require('./routes/index'))
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`)
 })
-
-//18.33
